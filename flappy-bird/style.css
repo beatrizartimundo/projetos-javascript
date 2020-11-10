@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    font-family: 'ARCADECLASSIC';
+    color: floralwhite;
+    text-align: center;
+    margin: 0;
+    
+    
+}
+
+@font-face{
+    font-family:'ARCADECLASSIC';
+    src: url('./assets/fonts/ARCADECLASSIC.TTF');
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+    font-size: 30px;
+    letter-spacing: 2px;
+    background: linear-gradient(to right, #3e3e3f, #264261b4);
+    margin: 5px;
+    
+    
+}
+[wm-flappy]{
+    position: relative;
+    border: 5px solid dodgerblue;
+    height: 500px;
+    width: 1023px;
+    background-color: deepskyblue;
+    overflow: hidden;
+}
+.botao{
+  
+    width: 300px;
+    height: 50px;
+    color: white;
+    background: yellowgreen;
+    margin: 200px;
+    font-size: 35px;
+}
+
+.passaro{
+    position: absolute;
+    width: 60px;
+    left: calc(50% - 30px);
+    
+}
+.par-de-barreiras{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+.barreira{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* canos */
+.barreira .borda{
+    height: 30px;
+    width: 130px;
+    background: linear-gradient(90deg, #639301 , #a5e82e);
+    border: 2px solid #000000;
+}
+
+.barreira .corpo{
+    height: 150px;
+    width: 110px;
+    background: linear-gradient(90deg, #639301 , #a5e82e);
+    border-left: 2px solid #000000;
+    border-right: 2px solid #000000;
+}
+.progresso{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 70px;
+    z-index: 100;
+}
+
